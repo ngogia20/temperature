@@ -54,7 +54,7 @@ try:
 				TemperatureBit = TemperatureBit + "0"
  
 except:
-	print "ERR_RANGE"
+	print "ERR_RANGE1111"
 	exit(0)
  
 try:
