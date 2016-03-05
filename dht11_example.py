@@ -27,7 +27,7 @@ while True:
 		print("Last valid input: " + str(datetime.datetime.now()))
 		print("Temperature: %d C" % result.temperature)
 		print("Humidity: %d %%" % result.humidity)
-		values = {"message": { "alert": temperature }}
+		values = {"message": { "alert": result.temperature }}
 		req = requests.post(url, data=json.dumps(values), headers=head)
     		
 	time.sleep(1)
